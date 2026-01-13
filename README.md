@@ -2,6 +2,17 @@
 
 fiz esse bot pra dar aquela floodada básica ou automatizar mensagens no whatsapp usando python e pyautogui. o projeto ainda tá em desenvolvimento e vou incrementar mais coisas em breve.
 
+---
+
+### aviso importante: cuidado com o ban
+o whatsapp tem algoritmos que detectam comportamento robotico. se voce mandar 100 mensagens em 2 segundos, voce vai tomar ban.
+
+* **modo turbo**: se deixar o codigo sem time.sleep dentro do loop, ele vai voar, mas o risco de perder o numero e alto.
+* **modo humano**: no codigo, adicionei um comentario sobre como usar a biblioteca random. isso faz o bot esperar tempos diferentes entre cada mensagem (ex: 0.5s, depois 1.2s), o que ajuda a enganar o sistema do zap.
+* **dica**: nao faca isso com quem nao conhece ou em grupos grandes, porque se alguem te denunciar, o ban vem na hora.
+
+---
+
 ## requerimentos (leia isso)
 
 tenha o app do whatsapp instalado
