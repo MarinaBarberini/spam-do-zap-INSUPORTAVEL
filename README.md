@@ -2,8 +2,9 @@
 
 fiz esse bot pra dar aquela floodada básica ou automatizar mensagens no whatsapp usando python e pyautogui. o projeto ainda tá em desenvolvimento e vou incrementar mais coisas em breve.
 
-## o bagulho das dimensões e nomes (leia isso)
+## requerimentos (leia isso)
 
+tenha o app do whatsapp instalado
 esse bot precisa de dois ajustes manuais pra não dar ruim:
 
 1. **dimensões:** como o pyautogui trabalha com cliques em pixels, as coordenadas do meu monitor são diferentes do seu. se não ajustar, o mouse vai clicar no vazio.
