@@ -28,10 +28,10 @@ o projeto ainda tá em obras. logo menos pretendo colocar:
 ## como rodar
 
 1. clone o repositório:
-git clone https://github.com/marinabarberini/nome-do-repositorio.git
+git clone https://github.com/MarinaBarberini/spam-do-zap-INSUPORTAVEL.git
 
 2. entre na pasta:
-cd nome-do-repositorio
+cd loopinsuportavel
 
 3. instale as dependências:
 pip install -r requirements.txt
