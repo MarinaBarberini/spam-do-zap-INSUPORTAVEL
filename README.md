@@ -2,17 +2,22 @@
 
 fiz esse bot pra dar aquela floodada básica ou automatizar mensagens no whatsapp usando python e pyautogui. o projeto ainda tá em desenvolvimento e vou incrementar mais coisas em breve.
 
-## dimensões (leia isso)
+## o bagulho das dimensões e nomes (leia isso)
 
-by the way: como o pyautogui trabalha com cliques em pixels, as coordenadas que funcionam no meu monitor provavelmente não vão funcionar no seu. se você só baixar e der play, o mouse vai clicar em qualquer lugar, menos no campo de texto.
+esse bot precisa de dois ajustes manuais pra não dar ruim:
+
+1. **dimensões:** como o pyautogui trabalha com cliques em pixels, as coordenadas do meu monitor são diferentes do seu. se não ajustar, o mouse vai clicar no vazio.
+2. **contato e frase:** você precisa abrir o código e escrever o nome do contato (exatamente como tá no seu zap) e a frase que você quer spammar.
 
 ### como ajustar pro seu pc:
-não entra em pânico, eu deixei um arquivo auxiliar pronto pra resolver isso.
+não entra em pânico, eu deixei um arquivo auxiliar pronto pra resolver o problema das coordenadas.
 
 1. abre o arquivo auxiliar (aquele que tem o time.sleep e o print(pyautogui.position())).
-2. roda ele e corre com o mouse pra cima do campo de digitação do whatsapp ou do botão de enviar.
-3. espera o tempo do sleep acabar e olha no terminal: ele vai te dar as coordenadas exatas (x e y) do seu monitor.
+2. roda ele e corre com o mouse pra cima do campo de digitação do whatsapp.
+3. espera o tempo do sleep acabar e olha no terminal: ele vai te dar as coordenadas exatas (x e y).
 4. pega esses números e troca lá no código principal (main.py) dentro do comando pyautogui.click(x, y).
+
+5. **não esquece:** aproveita que o código tá aberto e troca o nome do contato e a mensagem também!
 
 ## o que usei
 * python
@@ -31,12 +36,12 @@ o projeto ainda tá em obras. logo menos pretendo colocar:
 git clone https://github.com/MarinaBarberini/spam-do-zap-INSUPORTAVEL.git
 
 2. entre na pasta:
-cd loopinsuportavel
+cd spam-do-zap-INSUPORTAVEL
 
 3. instale as dependências:
 pip install -r requirements.txt
 
-4. ajuste as coordenadas usando o script auxiliar conforme explicado acima.
+4. ajuste as coordenadas, o nome do contato e a frase no código.
 
 5. execute o bot:
 python main.py
